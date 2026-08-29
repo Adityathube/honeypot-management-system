@@ -1,0 +1,28 @@
+# Java / NetBeans build output
+build/
+out/
+*.class
+
+# NetBeans local/private configuration
+nbproject/private/
+
+# IDE metadata
+.idea/
+*.iml
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# Local datasets / exports
+*.xlsx
+*.xls
