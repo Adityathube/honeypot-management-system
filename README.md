@@ -100,6 +100,38 @@ The original client contains timing logic that deliberately changes its transmis
 
 This is a **basic educational traffic-detection heuristic**, not a production DDoS detector.
 
+## 📸 System in Action
+
+### 1. Honeypot Client
+
+The Java Swing client allows the user to configure the honeypot server and transmit dataset records over TCP.
+
+![Honeypot Client](docs/screenshots/client-interface.png)
+
+---
+
+### 2. DoS Attack Detection
+
+The honeypot server monitors incoming traffic and identifies abnormal traffic conditions using the project's queue-based detection mechanism.
+
+![DoS Attack Detection](docs/screenshots/dos-attack-detection.png)
+
+---
+
+### 3. Defence Activation
+
+When the system identifies the simulated high-traffic condition, the defence mechanism is activated and selected transactions are forwarded to the decoy server.
+
+![Defence Activated](docs/screenshots/defence-activated.png)
+
+---
+
+### 4. Database Results
+
+Processed records are stored in the MySQL databases used by the honeypot and decoy components.
+
+![Database Results](docs/screenshots/database-results.png)
+
 ## 🛠️ Technology Stack
 
 - Java
